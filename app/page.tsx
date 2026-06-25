@@ -55,6 +55,20 @@ export default function Home() {
           <p className="text-base leading-relaxed text-white/75 sm:text-lg">
             Ask Stripe for a chargeback for all months.
           </p>
+          <a
+            href="https://support.stripe.com/charge-lookup"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-6 inline-flex items-center gap-2 rounded-full border border-white/25 px-5 py-2.5 text-sm font-medium text-white/90 transition-colors duration-200 hover:bg-white hover:text-black"
+          >
+            Look up your charge
+            <span
+              aria-hidden
+              className="transition-transform duration-200 group-hover:translate-x-0.5"
+            >
+              &rarr;
+            </span>
+          </a>
         </div>
 
         <p
