@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 py-20 text-center">
+    <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 py-24 text-center">
       {/* subtle grid backdrop, monochrome */}
       <div
         aria-hidden
@@ -11,32 +11,56 @@ export default function Home() {
           backgroundSize: "44px 44px",
         }}
       />
+      {/* gentle vignette so the headline sits in light */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 60% 50% at 50% 42%, rgba(255,255,255,0.06), transparent 70%)",
+        }}
+      />
 
       <div className="relative z-10 flex w-full max-w-3xl flex-col items-center">
-        <span className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.25em] text-white/60">
-          Notice
-        </span>
-
-        <h1 className="text-5xl font-black leading-[0.95] tracking-tight sm:text-7xl md:text-8xl">
+        <h1
+          className="rise text-6xl font-black leading-[0.92] tracking-tight sm:text-7xl md:text-8xl"
+          style={{ animationDelay: "0.05s" }}
+        >
           buildinhub
           <br />
-          is <span className="text-white">DEAD</span>{" "}
-          <span aria-label="heart" className="align-middle">
+          is DEAD{" "}
+          <span aria-label="heart" className="align-middle text-white/90">
             &lt;3
           </span>
         </h1>
 
-        <p className="mt-10 max-w-xl text-lg leading-relaxed text-white/70 sm:text-xl">
+        <p
+          className="rise mt-8 max-w-xl text-balance text-lg leading-relaxed text-white/55 sm:text-xl"
+          style={{ animationDelay: "0.18s" }}
+        >
+          buildinhub engineers got mad at each other, so xD
+        </p>
+
+        <p
+          className="rise mt-10 text-base font-medium tracking-wide text-white/85 sm:text-lg"
+          style={{ animationDelay: "0.3s" }}
+        >
           Don&apos;t use it anymore.
         </p>
 
-        <div className="mt-12 w-full max-w-md border-t border-white/15 pt-8">
-          <p className="text-base leading-relaxed text-white/80 sm:text-lg">
+        <div
+          className="rise mt-12 w-full max-w-md border-t border-white/15 pt-8"
+          style={{ animationDelay: "0.42s" }}
+        >
+          <p className="text-base leading-relaxed text-white/75 sm:text-lg">
             Ask Stripe for a chargeback for all months.
           </p>
         </div>
 
-        <p className="mt-16 text-sm font-medium uppercase tracking-[0.4em] text-white/40">
+        <p
+          className="rise mt-16 text-sm font-medium uppercase tracking-[0.4em] text-white/35"
+          style={{ animationDelay: "0.54s" }}
+        >
           THX
         </p>
       </div>
